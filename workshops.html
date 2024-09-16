@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BU Open House</title>
+    <link rel="shortcut icon" href="image/BU logo.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="https://openhouse.bu.ac.th/_nuxt/logo_bu.B5Fc9ReW.png"
+            alt=""
+            width="150px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="schedule.html">Schedule</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="speaker.html">Speaker</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="workshops.html">Workshops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">Scholarships</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">???</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-danger" href="#" role="button">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead" style="background-image: url('https://openhouse.bu.ac.th/contents/banner/banner_2.jpg?4')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1 class="noto-sans-thai-600"">Workshops</h1>
+                        <span class="subheading noto-sans-thai-400">A leading, creative, and quality institution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5 timeline position-relative">
+        <style>
+            .timeline:before {
+            content: "";
+            background: #f4783b;
+            width: 5px;
+            height: 95%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+            .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+            padding: 40px 30px 10px 30px;
+            }
+            .timeline-item:nth-child(even) .timeline-content .date {
+            right: auto;
+            left: 0;
+            }
+            .timeline-item:nth-child(even) .timeline-content::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent var(--bs-light) transparent transparent;
+            }
+            .timeline-item::after {
+            content: "";
+            display: block;
+            clear: both;
+            }
+            .timeline-content {
+            position: relative;
+            width: 45%;
+            padding: 10px 30px;
+            border-radius: 4px;
+            background: var(--bs-light);
+            }
+            .timeline-content::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            right: -15px;
+            border-width: 10px 0 10px 15px;
+            border-color: transparent transparent transparent var(--bs-light);
+            }
+            .timeline-img {
+            width: 30px;
+            height: 30px;
+            background: #f4783b;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            margin-top: 25px;
+            margin-left: -15px;
+            }
+            @media screen and (max-width: 768px) {
+            .timeline::before {
+            left: 50px;
+            }
+            .timeline .timeline-img {
+            left: 50px;
+            }
+            .timeline .timeline-content {
+            max-width: 100%;
+            width: auto;
+            margin-left: 70px;
+            }
+            .timeline .timeline-item:nth-child(even) .timeline-content {
+            float: none;
+            }
+            .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent #f5f5f5 transparent transparent;
+            }
+            }
+        </style>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Presenting Design Concepts Using Collage Techniques</h2>
+                <div editable="rich">
+                    <p>School of Architecture | Architecture</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Techniques for Being a DJ and Podcasting Skills</h2>
+                <div editable="rich">
+                    <p>School of Communication Arts | Broadcasting and Streaming Media Production</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Designing and Drawing Character Illustrations Activity</h2>
+                <div editable="rich">
+                    <p>School of Fine and Applied Arts | Art and Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Presenting Interior Design Concepts by using Models</h2>
+                <div editable="rich">
+                    <p>School of Architecture | Interior Architecture</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Basic Film Production Skills</h2>
+                <div editable="rich">
+                    <p>School of Digital Media and Cinematic Arts | Film</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Step Name</h2>
+                <div editable="rich">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus, lobortis non augue at, placerat viverra risus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item w-100 mb-4 py-4 text-dark lc-block">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <p editable="inline" class="lead">29-31 Aug 2024</p>
+                <h2 editable="inline" class="fw-bold rfs-12">Arranging Components in Communication Design</h2>
+                <div editable="rich">
+                    <p>School of Fine and Applied Arts | Communication Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <section class="">
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <div class="lc-block mb-3">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  class="img-fluid me-1"
+                  src="image/BU logo.jpg"
+                  alt="my brand"
+                  width="48px"
+                  height="48px"
+                  lc-helper="image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col offset-md-2 mb-3">
+            <!-- /lc-block -->
+            <div class="lc-block small">
+              <style>
+                .footer-links-list ul {
+                  padding-left: 0;
+                }
+                .footer-links-list ul li {
+                  margin-bottom: 15px;
+                  list-style-type: none;
+                  padding-left: 0;
+                }
+                .footer-links-list a {
+                  text-decoration: none;
+                  color: var(--bs-body-color);
+                }
+              </style>
+              <div editable="rich" class="footer-links-list">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Speaker</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <div class="col mb-3">
+            <!-- /lc-block -->
+            <div class="lc-block small">
+              <div editable="rich" class="footer-links-list">
+                <ul>
+                  <li><a href="#">Workshops</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Sponsors</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+          <div class="col mb-3">
+            <!-- /lc-block -->
+            <div class="lc-block small">
+              <div editable="rich" class="footer-links-list">
+                <ul>
+                  <li><a href="#">Third Element</a></li>
+                  <li><a href="#">Fourth Element</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /lc-block -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
